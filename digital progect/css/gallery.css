@@ -1,0 +1,338 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    height: 1200px;
+}
+.head-nav {
+    align-items: center;
+    width: 100%;
+    height: 102px;
+}
+.logo {
+    float: left;
+    width: 17px;
+    height: 28px;
+    margin-top: 29px;
+    margin-left: 26px;
+}
+.logo-text {
+    margin-top: 60px;
+    margin-bottom: 0px;
+    position: absolute;
+    width: 85px;
+    height: 18px;
+    font-family: 'Bebas Neue';
+}
+.nav {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 205px;
+    float: right;
+    font-family: 'Nunito';
+    width: 565px;
+    height: 102px;
+    display: flex;
+}
+.nav-item {
+    margin-top: 44px;
+    margin-left: 60px;
+    list-style: none;
+}
+.nav-item:nth-child(1) {
+    margin-left: 0;
+}
+.nav-a-item {
+    position: relative;
+    font-size: 12px;
+    line-height: 12px;
+    text-decoration: none;
+    color: #333333;
+}
+.nav-a-item::before{
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333333;
+    transition: 0.2s;
+    transform: scaleX(0);
+}
+.nav-a-item:hover:before {
+    transform: scaleX(1);
+}
+.gallery-text{
+    margin: 0;
+    padding-top: 127px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 54px;
+    line-height: 64px;
+    color: #bdbdbd;
+}
+.photos-text {
+    margin: 0;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 64px;
+    color: #333;
+}
+.line-after-photos {
+    width: 100%;
+    height: 1px;
+    background-color: #f2f2f2;
+    border: none;
+    margin-top: 35px;
+}
+.gallery-block {
+    width: 100%;
+    height: 560px;
+    margin-top: 30px;
+}
+.project-block1 {
+    position: relative;
+    width: 210px;
+    height: 260px;
+}
+.project-block1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 140px;
+    width: 100%;
+    height: 50%;
+    background-color: #FBFBFB;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.project-block1:hover::before {
+    opacity: 1;
+}
+.project-block1:hover .project-text1 {
+    transition: .5s;
+    transform: translateY(-120px);
+    opacity: 1;
+    cursor: pointer;
+}
+.project1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-text1 {
+    position: absolute;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333;
+    transform: translateY(-120px);
+    margin-left: 79px;
+    overflow: hidden;
+    opacity: 0;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 20px 64px 20px;
+}
+.gallery1 {
+    width: 100%;
+    height: 260px;
+    display: flex;
+    justify-content: space-between;
+}
+.gallery2 {
+    width: 100%;
+    height: 260px;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 30px;
+}
+.footer {
+    width: 100%;
+    height: 345px;
+    background-color: #333333;
+    display: flex;
+}
+.footer-info {
+    padding-top: 58px;
+    width: 1112px;
+    height: 230px;
+    margin: 0 auto;
+    display: flex;
+}
+.logo_footer {
+    float: left;
+}
+.info-block {
+    width: 102px;
+    height: 230px;
+    padding-left: 100px;
+}
+.info-block p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 28px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.info-block a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    transition: .2s;
+}
+.info-block a:hover {
+    color: #cccccc;
+}
+.contact-block {
+    width: 345px;
+    height: 230px;
+    margin-left: 157px;
+}
+.contacts {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 28px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.place {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.place p {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.place img {
+    padding-bottom: 35px;
+    margin-right: 20px;
+}
+.number-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+.number-block p {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-left: 14px;
+    margin: 0;
+}
+.number-block img {
+    padding-bottom: 5px;
+}
+.mail-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+.mail-block p {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-left: 14px;
+    margin: 0;
+}
+.network-block {
+    width: 193px;
+    height: 64px;
+    margin-left: 140px;
+}
+.network-block p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 28px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.networks {
+    display: flex;
+    align-items: center;
+}
+.networks a {
+    display: block;
+    margin-left: 40px;
+}
+.networks a:nth-child(1) {
+    margin-left: 0;
+}
+@media (max-width:1190px) {
+    .container {
+        width: 900px;
+        height: 1200px;
+    }
+    .nav{
+        margin-right: 35px;
+    }
+    .project-block1 {
+        width: 170px;
+    }
+    .footer {
+        width: 100%;
+    }
+    .footer-info {
+        justify-content: space-evenly;
+    }
+    .info-block {
+        padding-left: 0;
+    }
+    .contact-block {
+        margin-left: 0;
+        width: 264px;
+    }
+    .network-block {
+        margin-left: 0;
+    }
+}
+@media (max-width:920px) {
+    .nav {
+        margin-right: 85px;
+    }
+    .gallery-block {
+        flex-wrap: wrap;
+    }
+    .gallery1 {
+        flex-wrap: wrap;
+    }
+    .gallery-block1 {
+        flex-wrap: wrap;
+    }
+}
